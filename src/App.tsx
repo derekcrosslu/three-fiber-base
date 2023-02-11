@@ -12,8 +12,8 @@ function Box() {
 
   return (
     <mesh ref={boxRef}>
-        <boxGeometry args={[1, 1, 1]} />
-        <meshStandardMaterial color="orange" />
+        <sphereGeometry args={[1, 16, 16, 0, Math.PI*1.7]} />
+        <meshStandardMaterial color="orange" wireframe />
       </mesh>
   )
 }
@@ -30,7 +30,8 @@ function ThreeScene() {
   return (
     <Canvas>
       <ambientLight />
-      <pointLight position={[5, 5, 5]} intensity={5} />
+      <pointLight position={[5, 5, 5]} intensity={3} />
+      <pointLight position={[-3,-3,2]}  />
       <axesHelper args={[10]} />
       <Controls />
       <Box />
