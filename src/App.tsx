@@ -1,20 +1,36 @@
-import { useState } from 'react'
-import { Canvas } from '@react-three/fiber'
+import { useRef, useState } from 'react'
+import { Canvas, useFrame } from '@react-three/fiber'
+import { Mesh } from 'three'
+
+function Box() {
+  const boxRef = useRef<Mesh>(null!);
+
+  useFrame(() => {
+    boxRef.current.rotation.x += 0.005;
+    boxRef.current.rotation.y += 0.01;
+  })
+
+  return (
+    <mesh ref={boxRef}>
+        <boxGeometry args={[1, 1, 1]} />
+        <meshStandardMaterial color="orange" />
+      </mesh>
+  )
+}
 
 function ThreeScene() {
   return (
     <Canvas>
-      <mesh>
-        <boxGeometry args={[1, 1, 1]} />
-        <meshStandardMaterial color="orange" />
-      </mesh>
+      <ambientLight />
+      <pointLight position={[5,5,5]} />
+      <Box />
     </Canvas>
   )
 }
 
 function App() {
   return (
-    <div className="App">
+    <div className="h-screen">
       <ThreeScene />
     </div>
   )
