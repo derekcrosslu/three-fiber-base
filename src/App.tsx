@@ -2,9 +2,14 @@ import { useRef, useState } from 'react'
 import { Canvas, useFrame, useThree } from '@react-three/fiber'
 import { Mesh } from 'three'
 // import Silla from './SILLA'
-import Elias from './ELIAS'
-import Fort from './FORT'
-import Fort4k from './FORT4k'
+import Elias from './models/ELIAS'
+import Fort4k from './models/FORT4k'
+import Silla_Mesa from './models/SILLA_MESA'
+import Ladder from './models/LADDER'
+import Postcards from './models/POSTCARDS'
+import Sofa2 from './models/SOFA2'
+import Sofa3 from './models/SOFA3'
+import Tree  from './models/TREE'
 
 function Box() {
   const boxRef = useRef<Mesh>(null!);
@@ -38,10 +43,15 @@ function ThreeScene() {
       <pointLight position={[-3,-3,2]}  />
       <axesHelper args={[10]} />
       <Controls />
-      {/* <Box /> */}
-      {/* <Silla /> */}
       <Elias />
       <Fort4k />
+      <Tree />
+      <Silla_Mesa />
+      <Ladder />
+      <Postcards />
+      <Sofa2 />
+      <Sofa3 />
+      
     </Canvas>
   )
 }
