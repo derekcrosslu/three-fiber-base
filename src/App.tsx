@@ -12,7 +12,7 @@ function Box() {
 
   return (
     <mesh ref={boxRef}>
-        <sphereGeometry args={[1, 16, 16, 0, Math.PI*1.7]} />
+        <sphereGeometry args={[1, 16, 16, 0, Math.PI*1.9]} />
         <meshStandardMaterial color="orange" wireframe />
       </mesh>
   )
