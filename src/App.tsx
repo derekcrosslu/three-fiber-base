@@ -1,6 +1,7 @@
 import { useRef, useState } from 'react'
 import { Canvas, useFrame, useThree } from '@react-three/fiber'
 import { Mesh } from 'three'
+import Silla from './SILLA'
 
 function Box() {
   const boxRef = useRef<Mesh>(null!);
@@ -34,7 +35,8 @@ function ThreeScene() {
       <pointLight position={[-3,-3,2]}  />
       <axesHelper args={[10]} />
       <Controls />
-      <Box />
+      {/* <Box /> */}
+      <Silla />
     </Canvas>
   )
 }
