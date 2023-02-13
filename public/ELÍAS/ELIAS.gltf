@@ -1,0 +1,389 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v1.6.16",
+        "version" : "2.0"
+    },
+    "scene" : 0,
+    "scenes" : [
+        {
+            "name" : "Scene",
+            "nodes" : [
+                0
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "mesh" : 0,
+            "name" : "ELIAS",
+            "rotation" : [
+                0.7071068286895752,
+                0,
+                0,
+                0.7071067094802856
+            ],
+            "translation" : [
+                -12.131678581237793,
+                -2.6808652877807617,
+                -7.2452898025512695
+            ]
+        }
+    ],
+    "materials" : [
+        {
+            "doubleSided" : true,
+            "name" : "ELIAS",
+            "pbrMetallicRoughness" : {
+                "baseColorTexture" : {
+                    "index" : 0
+                },
+                "metallicFactor" : 0
+            }
+        },
+        {
+            "doubleSided" : true,
+            "name" : "ELIAS1",
+            "pbrMetallicRoughness" : {
+                "baseColorTexture" : {
+                    "index" : 1
+                },
+                "metallicFactor" : 0
+            }
+        },
+        {
+            "doubleSided" : true,
+            "name" : "ELIAS2",
+            "pbrMetallicRoughness" : {
+                "baseColorTexture" : {
+                    "index" : 2
+                },
+                "metallicFactor" : 0
+            }
+        },
+        {
+            "doubleSided" : true,
+            "name" : "ELIAS3",
+            "pbrMetallicRoughness" : {
+                "baseColorTexture" : {
+                    "index" : 3
+                },
+                "metallicFactor" : 0
+            }
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "ELIAS",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "NORMAL" : 1,
+                        "TEXCOORD_0" : 2
+                    },
+                    "indices" : 3,
+                    "material" : 0
+                },
+                {
+                    "attributes" : {
+                        "POSITION" : 4,
+                        "NORMAL" : 5,
+                        "TEXCOORD_0" : 6
+                    },
+                    "indices" : 7,
+                    "material" : 1
+                },
+                {
+                    "attributes" : {
+                        "POSITION" : 8,
+                        "NORMAL" : 9,
+                        "TEXCOORD_0" : 10
+                    },
+                    "indices" : 11,
+                    "material" : 2
+                },
+                {
+                    "attributes" : {
+                        "POSITION" : 12,
+                        "NORMAL" : 13,
+                        "TEXCOORD_0" : 14
+                    },
+                    "indices" : 15,
+                    "material" : 3
+                }
+            ]
+        }
+    ],
+    "textures" : [
+        {
+            "sampler" : 0,
+            "source" : 0
+        },
+        {
+            "sampler" : 0,
+            "source" : 1
+        },
+        {
+            "sampler" : 0,
+            "source" : 2
+        },
+        {
+            "sampler" : 0,
+            "source" : 3
+        }
+    ],
+    "images" : [
+        {
+            "mimeType" : "image/jpeg",
+            "name" : "ELIAS",
+            "uri" : "ELIAS.jpg"
+        },
+        {
+            "mimeType" : "image/jpeg",
+            "name" : "ELIAS1",
+            "uri" : "ELIAS1.jpg"
+        },
+        {
+            "mimeType" : "image/jpeg",
+            "name" : "ELIAS2",
+            "uri" : "ELIAS2.jpg"
+        },
+        {
+            "mimeType" : "image/jpeg",
+            "name" : "ELIAS3",
+            "uri" : "ELIAS3.jpg"
+        }
+    ],
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5126,
+            "count" : 168240,
+            "max" : [
+                5.920069694519043,
+                -5.182687282562256,
+                5.537008285522461
+            ],
+            "min" : [
+                0.6927001476287842,
+                -8.427692413330078,
+                -9.20608139038086
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 168240,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 168240,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 3,
+            "componentType" : 5125,
+            "count" : 168246,
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 4,
+            "componentType" : 5126,
+            "count" : 316098,
+            "max" : [
+                5.909109592437744,
+                -4.4894514083862305,
+                5.56588077545166
+            ],
+            "min" : [
+                0.6927001476287842,
+                -8.5199556350708,
+                -8.613482475280762
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 5,
+            "componentType" : 5126,
+            "count" : 316098,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 6,
+            "componentType" : 5126,
+            "count" : 316098,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 7,
+            "componentType" : 5125,
+            "count" : 316104,
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 8,
+            "componentType" : 5126,
+            "count" : 324395,
+            "max" : [
+                5.918740272521973,
+                -4.4778971672058105,
+                5.6155595779418945
+            ],
+            "min" : [
+                0.6928532123565674,
+                -8.83079719543457,
+                -9.237451553344727
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 9,
+            "componentType" : 5126,
+            "count" : 324395,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 10,
+            "componentType" : 5126,
+            "count" : 324395,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 11,
+            "componentType" : 5125,
+            "count" : 324411,
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 12,
+            "componentType" : 5126,
+            "count" : 196582,
+            "max" : [
+                5.251704692840576,
+                -4.488146781921387,
+                5.555838584899902
+            ],
+            "min" : [
+                0.7226462364196777,
+                -8.69216537475586,
+                -8.337178230285645
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 13,
+            "componentType" : 5126,
+            "count" : 196582,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 14,
+            "componentType" : 5126,
+            "count" : 196582,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 15,
+            "componentType" : 5125,
+            "count" : 196584,
+            "type" : "SCALAR"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 2018880,
+            "byteOffset" : 0
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 2018880,
+            "byteOffset" : 2018880
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 1345920,
+            "byteOffset" : 4037760
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 672984,
+            "byteOffset" : 5383680
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 3793176,
+            "byteOffset" : 6056664
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 3793176,
+            "byteOffset" : 9849840
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 2528784,
+            "byteOffset" : 13643016
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 1264416,
+            "byteOffset" : 16171800
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 3892740,
+            "byteOffset" : 17436216
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 3892740,
+            "byteOffset" : 21328956
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 2595160,
+            "byteOffset" : 25221696
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 1297644,
+            "byteOffset" : 27816856
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 2358984,
+            "byteOffset" : 29114500
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 2358984,
+            "byteOffset" : 31473484
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 1572656,
+            "byteOffset" : 33832468
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 786336,
+            "byteOffset" : 35405124
+        }
+    ],
+    "samplers" : [
+        {
+            "magFilter" : 9729,
+            "minFilter" : 9987
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 36191460,
+            "uri" : "ELIAS.bin"
+        }
+    ]
+}
