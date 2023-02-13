@@ -4,6 +4,7 @@ import { Mesh } from 'three'
 // import Silla from './SILLA'
 import Elias from './ELIAS'
 import Fort from './FORT'
+import Fort4k from './FORT4k'
 
 function Box() {
   const boxRef = useRef<Mesh>(null!);
@@ -40,7 +41,7 @@ function ThreeScene() {
       {/* <Box /> */}
       {/* <Silla /> */}
       <Elias />
-      <Fort />
+      <Fort4k />
     </Canvas>
   )
 }
