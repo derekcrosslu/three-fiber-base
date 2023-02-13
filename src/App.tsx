@@ -10,6 +10,7 @@ import Postcards from './models/POSTCARDS'
 import Sofa2 from './models/SOFA2'
 import Sofa3 from './models/SOFA3'
 import Tree  from './models/TREE'
+import { ContactShadows } from '@react-three/drei';
 
 function Box() {
   const boxRef = useRef<Mesh>(null!);
@@ -45,13 +46,13 @@ function ThreeScene() {
       <Controls />
       <Elias />
       <Fort4k />
-      <Tree />
-      <Silla_Mesa />
-      <Ladder />
-      <Postcards />
-      <Sofa2 />
-      <Sofa3 />
-      
+      <Tree position={[3, 0, -8]} />
+      <Silla_Mesa position={[3, 0, 5]} rotation={[0, 0, 0]} scale={ 4} />
+      <Ladder position={[15, 0, -5]} rotation={[0, 1.6, 0]} scale={ 3} />
+      <Postcards position={[5, 4, 18]} rotation={[0, 3, 0]} scale={ 15} />
+      <Sofa2 position={[3, 0, -5]} rotation={[0, 0, 0]} scale={ 5} />
+      <Sofa3 position={[-3,0,5]} rotation={[0,1.7,0]} />
+      <ContactShadows position={[0, 0, 0]} blur={2.5} scale={20} far={10} />
     </Canvas>
   )
 }

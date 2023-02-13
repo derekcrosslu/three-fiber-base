@@ -22,7 +22,7 @@ type GLTFResult = GLTF & {
 export default function Sofa3(props: JSX.IntrinsicElements['group']) {
   const { nodes, materials } = useGLTF('/SOFA1/sofa_03_4k.gltf') as GLTFResult
   return (
-    <group {...props} dispose={null}>
+    <group {...props} dispose={null} scale={3}  >
       <mesh geometry={nodes.Mesh009.geometry} material={materials.sofa_03} />
       <mesh geometry={nodes.Mesh009_1.geometry} material={materials.sofa_03_fringe} />
     </group>

@@ -26,7 +26,7 @@ type GLTFResult = GLTF & {
 export default function ELIAS(props: JSX.IntrinsicElements['group']) {
   const { nodes, materials } = useGLTF('/ELIAS/ELIAS.gltf') as GLTFResult
   return (
-    <group {...props} dispose={null} scale={0.5}>
+    <group {...props} dispose={null} scale={0.4}>
       <group position={[13, 5, 5]} rotation={[Math.PI / 2, 0, 0]}>
         <mesh geometry={nodes.ELIAS_1.geometry} material={materials.ELIAS} />
         <mesh geometry={nodes.ELIAS_2.geometry} material={materials.ELIAS1} />
