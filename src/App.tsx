@@ -1,7 +1,7 @@
 import { useRef, useState } from 'react'
 import { Canvas, useFrame, useThree } from '@react-three/fiber'
 import { Mesh } from 'three'
-import Silla from './SILLA'
+// import Silla from './SILLA'
 import Elias from './ELIAS'
 
 function Box() {
