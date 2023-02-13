@@ -3,6 +3,7 @@ import { Canvas, useFrame, useThree } from '@react-three/fiber'
 import { Mesh } from 'three'
 // import Silla from './SILLA'
 import Elias from './ELIAS'
+import Fort from './FORT'
 
 function Box() {
   const boxRef = useRef<Mesh>(null!);
@@ -39,6 +40,7 @@ function ThreeScene() {
       {/* <Box /> */}
       {/* <Silla /> */}
       <Elias />
+      <Fort />
     </Canvas>
   )
 }
