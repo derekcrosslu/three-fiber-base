@@ -59,77 +59,6 @@ export function Centro(props: JSX.IntrinsicElements['group']) {
   })
   
   materials.BAKEFONDO.blending = THREE.AdditiveBlending
-// materials.floor_tiles_04.setValues({ 
-//     // color: '#000000',
-//     // roughness: 0.5,
-//     // metalness: 0.5,
-//     // emissive: '#000000',
-//     // emissiveIntensity: 0.5,
-//     // emissiveMap: '#000000',
-//     // emissiveMapIntensity: 0.5,
-//     // normalMap: '#000000',
-//     // normalScale: 0.5,
-//     // displacementMap: '#000000',
-//     // displacementScale: 0.5,
-//     // displacementBias: 0.5,
-//     // alphaMap: '#000000',
-//     // alphaTest: 0.5,
-//     // wireframe: true,
-//     // wireframeLinewidth: 0.5,
-//     // wireframeLinecap: 'round',
-//     // wireframeLinejoin: 'round',
-//     // skinning: true,
-//     // morphTargets: true,
-//     // morphNormals: true,
-//     // reflectivity: 0.5,
-//     // refractionRatio: 0.5,
-//     // clearcoat: 0.5,
-//     // clearcoatMap: '#000000',
-//     // clearcoatRoughness: 0.5,
-//     // clearcoatRoughnessMap: '#000000',
-//     // clearcoatNormalScale: 0.5,
-//     // clearcoatNormalMap: '#000000',
-//     // sheen: '#000000',
-//     // transmission: 0.5,
-//     // transmissionMap: '#000000',
-//     // aoMap: '#000000',
-//     // aoMapIntensity: 0.5,
-//     // envMap: '#000000',
-//     // envMapIntensity: 0.5,
-//     // lightMap: '#000000',
-//     // lightMapIntensity: 0.5,
-//     // gradientMap: '#000000',
-//     // fog: true,
-//     // depthTest: true,
-//     // depthWrite: true,
-//     // depthFunc: 'less',
-//     // colorWrite: true,
-//     // stencilWrite: true,
-//     // stencilWriteMask: 0.5,
-//     // stencilFunc: 'less',
-//     // stencilRef: 0.5,
-//     // stencilFuncMask: 0.5,
-//     // stencilFail: 'keep',
-//     // stencilZFail: 'keep',
-//     // stencilZPass: 'keep',
-//     // stencilClear: 0.5,
-//     // polygonOffset: true,
-//     // polygonOffsetFactor: 0.5,
-//     // polygonOffsetUnits: 0.5,
-//     // dithering: true,
-//     // alphaToCoverage: true,
-//     // premultipliedAlpha: true,
-//     // visible: true,
-//     // userData: {},
-//     // name: 'floor_tiles_04',
-//     // type: 'MeshStandardMaterial',
-//     // uuid: 'E8F9C9C8-1B5C-4B5C-8F5C-1B5C4B5C8F5C',
-//     // color: '#000000',
-//     // roughness: 0.5,
-//     // metalness: 0.5,
-
-// })
-  
   
   return (
 <group>
@@ -171,11 +100,9 @@ const colorsillas = useTexture('/SILLAS/COLORSILLAS.jpg');
     metalness: 0.5,
   })
 
-  // materials.ASIENTO.blending = THREE.AdditiveBlending
+  materials.ASIENTO.blending = THREE.AdditiveBlending
   materials.ASIENTO.side = THREE.DoubleSide
 
-  // nodes.Cube032.geometry.computeVertexNormals()
-  // nodes.Cube032.geometry.computeFaceNormals()
   
   
   return (
@@ -281,32 +208,5 @@ export function PatasRejas(props: JSX.IntrinsicElements['group']) {
 
 useGLTF.preload('/SILLAS/PATASREJAS.gltf');
 
-// export function Piso(props: JSX.IntrinsicElements['group']) {
-//   const { nodes, materials } = useGLTF('/PISO/floor_tiles_04_4k.gltf') as GLTFResult
-
-
-//   return (
-//     // <group {...props} dispose={null}>
-//       <mesh
-//         // material={materials.floor_tiles_04}
-//         rotation={[-Math.PI / 2, 0, 0]}
-//           // position={[0, -1, 0]}
-//         receiveShadow
-        
-//       >
-//         <meshStandardMaterial attach='material' map={texture} side={THREE.DoubleSide} />
-//         {/* <planeBufferGeometry
-//           args={[15, 15]}
-//           attach="geometry" 
-          
-//         /> */}
-//       <planeBufferGeometry args={[100, 100]} attach='geometry' />
-
-//       </mesh>
-//     // </group>
-//   )
-// }
-
-// useGLTF.preload('/PISO/floor_tiles_04_4k.gltf');
 
 

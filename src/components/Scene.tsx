@@ -1,15 +1,8 @@
-import * as THREE from 'three';
 import {
-  Environment,
   OrbitControls,
-  PerspectiveCamera,
-  ContactShadows,
   Stage
 } from "@react-three/drei";
-import { Canvas, useFrame } from '@react-three/fiber';
-import React, { useRef } from 'react';
 import { Centro, Sillas, Mesas, Patas, PatasRejas, Parantes } from './Models';
-import Model from './ModLoader';
 import Plantas from './Plantas'
 
 
@@ -17,22 +10,6 @@ const Scene = () => {
 
 return (
   <>
-
-      {/* <Environment
-        // files={"../textures/studio.hdr"}
-        files={"../textures/studio.hdr"}
-        // encoding={THREE.sRGBEncoding}
-        background={true}
-      /> */}
-      {/* <ambientLight
-        intensity={0.01}
-        position={[0, 0, 0]}
-        color="white"
-        castShadow
-        receiveShadow
-    
-      /> */}
-    
        <spotLight
         color={'white'}
         intensity={0.2}
@@ -76,10 +53,9 @@ return (
       <PatasRejas />
       <Parantes />
       <Mesas />
-      {/* <Piso /> */}
       <Plantas />
 
-        </Stage>
+    </Stage>
 
     
 
