@@ -1,0 +1,297 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v1.6.16",
+        "version" : "2.0"
+    },
+    "scene" : 0,
+    "scenes" : [
+        {
+            "name" : "Scene",
+            "nodes" : [
+                0
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "mesh" : 0,
+            "name" : "Cube.037",
+            "rotation" : [
+                0,
+                -0.7085702419281006,
+                0,
+                0.7056403160095215
+            ],
+            "translation" : [
+                -17.332019805908203,
+                5.318175792694092,
+                -14.305609703063965
+            ]
+        }
+    ],
+    "materials" : [
+        {
+            "doubleSided" : true,
+            "name" : "NEGROMETAL_MESAS",
+            "pbrMetallicRoughness" : {
+                "baseColorFactor" : [
+                    0.004193865228444338,
+                    0.004193865228444338,
+                    0.004193865228444338,
+                    1
+                ],
+                "metallicFactor" : 0.7590909004211426,
+                "roughnessFactor" : 0.5
+            }
+        },
+        {
+            "doubleSided" : true,
+            "name" : "BAKEMESAS",
+            "pbrMetallicRoughness" : {
+                "baseColorTexture" : {
+                    "index" : 0
+                },
+                "metallicFactor" : 0.7063491940498352,
+                "roughnessFactor" : 0.31118327379226685
+            }
+        },
+        {
+            "doubleSided" : true,
+            "name" : "NEGROJEBE",
+            "pbrMetallicRoughness" : {
+                "baseColorFactor" : [
+                    0.020378582179546356,
+                    0.020378582179546356,
+                    0.020378582179546356,
+                    1
+                ],
+                "metallicFactor" : 0
+            }
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "Cube.005",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "NORMAL" : 1,
+                        "TEXCOORD_0" : 2
+                    },
+                    "indices" : 3,
+                    "material" : 0
+                },
+                {
+                    "attributes" : {
+                        "POSITION" : 4,
+                        "NORMAL" : 5,
+                        "TEXCOORD_0" : 6
+                    },
+                    "indices" : 7,
+                    "material" : 1
+                },
+                {
+                    "attributes" : {
+                        "POSITION" : 8,
+                        "NORMAL" : 9,
+                        "TEXCOORD_0" : 10
+                    },
+                    "indices" : 11,
+                    "material" : 2
+                }
+            ]
+        }
+    ],
+    "textures" : [
+        {
+            "sampler" : 0,
+            "source" : 0
+        }
+    ],
+    "images" : [
+        {
+            "mimeType" : "image/png",
+            "name" : "BAKEMESAS",
+            "uri" : "BAKEMESAS.png"
+        }
+    ],
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5126,
+            "count" : 2400,
+            "max" : [
+                21.20333480834961,
+                0.7523865699768066,
+                2.9275879859924316
+            ],
+            "min" : [
+                -36.17241287231445,
+                -5.318175792694092,
+                -29.29931640625
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 2400,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 2400,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 3,
+            "componentType" : 5123,
+            "count" : 4260,
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 4,
+            "componentType" : 5126,
+            "count" : 1162,
+            "max" : [
+                22.622879028320312,
+                0.9388079643249512,
+                3.4977855682373047
+            ],
+            "min" : [
+                -36.742530822753906,
+                0.5380392074584961,
+                -30.71869468688965
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 5,
+            "componentType" : 5126,
+            "count" : 1162,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 6,
+            "componentType" : 5126,
+            "count" : 1162,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 7,
+            "componentType" : 5123,
+            "count" : 1860,
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 8,
+            "componentType" : 5126,
+            "count" : 4160,
+            "max" : [
+                21.168155670166016,
+                -5.31654167175293,
+                2.919694662094116
+            ],
+            "min" : [
+                -36.164451599121094,
+                -5.456835746765137,
+                -29.26412582397461
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 9,
+            "componentType" : 5126,
+            "count" : 4160,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 10,
+            "componentType" : 5126,
+            "count" : 4160,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 11,
+            "componentType" : 5123,
+            "count" : 6960,
+            "type" : "SCALAR"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 28800,
+            "byteOffset" : 0
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 28800,
+            "byteOffset" : 28800
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 19200,
+            "byteOffset" : 57600
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 8520,
+            "byteOffset" : 76800
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 13944,
+            "byteOffset" : 85320
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 13944,
+            "byteOffset" : 99264
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 9296,
+            "byteOffset" : 113208
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 3720,
+            "byteOffset" : 122504
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 49920,
+            "byteOffset" : 126224
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 49920,
+            "byteOffset" : 176144
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 33280,
+            "byteOffset" : 226064
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 13920,
+            "byteOffset" : 259344
+        }
+    ],
+    "samplers" : [
+        {
+            "magFilter" : 9729,
+            "minFilter" : 9987
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 273264,
+            "uri" : "MESAS.bin"
+        }
+    ]
+}
