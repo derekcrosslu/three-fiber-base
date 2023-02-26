@@ -1,13 +1,28 @@
 import {
   OrbitControls,
-  Stage
+  Stage,
 } from "@react-three/drei";
-import { Centro, Sillas, Mesas, Patas, PatasRejas, Parantes } from './Models';
-import Plantas from './Plantas'
+import { Centro, Sillas, Mesas, Patas, PatasRejas, Parantes} from './Models';
+import { Stats, useProgress } from '@react-three/drei';
+import { usePerformanceMonitor } from '@react-three/drei';
+
 
 
 const Scene = () => {
-
+  const onChange = (val:any) => {
+    console.log('onChange', val)
+  }
+  const onIncline = (val:any) => {
+    console.log('onIncline', val)
+  }
+  const onDecline = (val:any) => {
+    console.log('onDecline', val)
+  }
+  const onFallback = (val:any) => {
+    console.log('onFallback', val)
+  }
+  usePerformanceMonitor({ onChange, onIncline, onDecline, onFallback })
+  
 return (
   <>
        <spotLight
@@ -38,7 +53,7 @@ return (
 
         <OrbitControls target={[0, 0, 0]} />
     <Centro
-      position={[0, -5, 0]}
+      position={[0, 0, 0]}
       rotation={[0, 0, 90]}
     />
     <Stage
@@ -53,7 +68,8 @@ return (
       <PatasRejas />
       <Parantes />
       <Mesas />
-      <Plantas />
+ <Stats />
+
 
     </Stage>
 

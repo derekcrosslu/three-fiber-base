@@ -22,8 +22,8 @@ type GLTFResult = GLTF & {
     Cylinder024: THREE.Mesh
      // patasrejas
     Cylinder009: THREE.Mesh
-    // piso
-    sphere_gltf: THREE.Mesh
+    // pencas
+    PENCAS001: THREE.Mesh
   }
   materials: {
     // centro
@@ -43,8 +43,8 @@ type GLTFResult = GLTF & {
     PATASBAKE: THREE.MeshStandardMaterial
     // patasrejas
     NEGROMETAL_PATASREJAS: THREE.MeshStandardMaterial
-    // piso
-    floor_tiles_04: THREE.MeshStandardMaterial
+    // pencas
+    PENCAS: THREE.MeshStandardMaterial
   }
 }
 
@@ -58,14 +58,14 @@ export function Centro(props: JSX.IntrinsicElements['group']) {
     emissiveIntensity: 0.5,
   })
   
-  materials.BAKEFONDO.blending = THREE.AdditiveBlending
+  // materials.BAKEFONDO.blending = THREE.AdditiveBlending
   
   return (
 <group>
   <mesh
     geometry={nodes.Plane.geometry}
     material={materials.BAKEFONDO}
-    position={[-5, -7.5, 15]}
+    position={[-5, -5.5, 15]}
     receiveShadow
     castShadow
       />
@@ -207,6 +207,8 @@ export function PatasRejas(props: JSX.IntrinsicElements['group']) {
 }
 
 useGLTF.preload('/SILLAS/PATASREJAS.gltf');
+
+
 
 
 
