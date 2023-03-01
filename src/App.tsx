@@ -5,7 +5,6 @@ import Scene from './components/Scene'
 import { Stats, useProgress, Html, Environment } from '@react-three/drei';
 import { Suspense } from 'react'
 import { SSAOPass } from "three-stdlib"
-import CuteAnim from './components/CuteAnimation'
 
 function App() {
 
@@ -64,7 +63,6 @@ const Loader = () => {
   return (
     <Html center>
       <div className='flex bg-orange-300'>{progress}% loaded</div>
-      {/* <CuteAnim /> */}
     </Html>
   );
 };
