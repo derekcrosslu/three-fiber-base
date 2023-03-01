@@ -9,24 +9,33 @@ interface ModelProps {
   url: string;
 }
 
-const Model: React.FC<ModelProps> = ({ url }) => {
+export const Model: React.FC<ModelProps> = ({ url }) => {
   const gltf: GLTF = useLoader(GLTFLoader, url);
   const meshRef = useRef<THREE.Mesh>(null);
 
-  useFrame(({mouse, camera}) => {
-    // if (meshRef.current) {
-    //   meshRef.current.rotation.y += 0.01;
-    // }
-  });
 
   return (
     <mesh
       ref={meshRef}
-    scale={[0.035, 0.035, 0.035]}
+    scale={[4.5, 4.5, 4.5]}
     >
       <primitive object={gltf.scene} />
     </mesh>
   );
 };
 
-export default Model;
+export const Model2: React.FC<ModelProps> = ({ url }) => {
+  const gltf: GLTF = useLoader(GLTFLoader, url);
+  const meshRef = useRef<THREE.Mesh>(null);
+
+
+  return (
+    <mesh
+      ref={meshRef}
+      scale={[0.05, 0.05, 0.05]}
+      position={[0, 0, 0]}
+    >
+      <primitive object={gltf.scene} />
+    </mesh>
+  );
+};

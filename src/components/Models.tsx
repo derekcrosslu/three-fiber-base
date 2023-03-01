@@ -1,6 +1,6 @@
 import * as THREE from 'three'
 import React, { useRef } from 'react'
-import { useGLTF, useTexture } from '@react-three/drei'
+import { useGLTF, useTexture, Select } from '@react-three/drei'
 import { GLTF } from 'three-stdlib';
 
 
@@ -65,9 +65,9 @@ export function Centro(props: JSX.IntrinsicElements['group']) {
   <mesh
     geometry={nodes.Plane.geometry}
     material={materials.BAKEFONDO}
-    position={[-5, -5.5, 15]}
-    receiveShadow
-    castShadow
+    position={[0, 0, 0]}
+    // receiveShadow
+    // castShadow
       />
       {/* <mesh>
         <boxBufferGeometry attach="geometry" args={[1, 1, 1]} />
@@ -129,20 +129,19 @@ useGLTF.preload('../SILLAS/SILLAS.gltf');
 
 export function Mesas(props: JSX.IntrinsicElements['group']) {
   const { nodes, materials } = useGLTF('../MESAS/MESAS.gltf') as GLTFResult
-
-  console.log('nodes mesas', nodes)
-  console.log('materials mesas', materials)
-
+console.log(nodes,'mesasnodes')
   return (
     <group
       position={[-17.33, 5.32, -14.31]}
       rotation={[Math.PI, -1.57, Math.PI]}
       castShadow
     >
-      <mesh geometry={nodes.Cube005.geometry} material={materials.NEGROMETAL_MESAS}
+      <Select
+        box multiple onChange={(val)=>console.log('click mesa', val)} filter={items => items}>
+       <mesh geometry={nodes.Cube005.geometry} material={materials.NEGROMETAL_MESAS}
               receiveShadow
         castShadow
-      />
+      /></Select> 
       <mesh geometry={nodes.Cube005_1.geometry} material={materials.BAKEMESAS}
               receiveShadow
         castShadow
@@ -167,6 +166,13 @@ export function Parantes(props: JSX.IntrinsicElements['group']) {
     roughness: 0.5,
     metalness: 0.5,
     
+  })
+
+  materials.PARANTEBAKE.blending = THREE.AdditiveBlending
+  materials.PARANTEBAKE.setValues({
+    roughness: 0.5,
+    metalness: 0.5,
+    color: 'black',
   })
 
   return (
