@@ -81,16 +81,26 @@ export function Centro(props: JSX.IntrinsicElements['group']) {
 }
 useGLTF.preload('../CENTRO/CENTRO.gltf');
 
+  const X1 = -4;
+  const Y1 = 0.5;
+  const R1 = 0.1;
+
 export function Sillas(props: JSX.IntrinsicElements['group']) {
-  const { nodes, materials } = useGLTF('/SILLAS/SILLAS.gltf') as GLTFResult
+  const { nodes, materials } = useGLTF('/MODELS/SILLAS/SILLAS.gltf') as GLTFResult
+
   return (
     <group {...props} dispose={null}>
-      <mesh geometry={nodes.Cube032.geometry} material={materials.ASIENTO}  rotation={[0, 0.16, 0]} receiveShadow />
+      <mesh
+        geometry={nodes.Cube032.geometry}
+        material={materials.ASIENTO}
+        rotation={[0, 0.16, 0]}
+        position={[X1, 0, Y1]}
+        receiveShadow />
     </group>
   )
 }
 
-useGLTF.preload('/SILLAS/SILLAS.gltf')
+useGLTF.preload('/MODELS/SILLAS/SILLAS.gltf')
 
 export function Sillas_(props: JSX.IntrinsicElements['group']) {
   const { nodes, materials } = useGLTF('../SILLAS/SILLAS.gltf') as GLTFResult
@@ -180,12 +190,20 @@ export function Parantes(props: JSX.IntrinsicElements['group']) {
       {...props}
       dispose={null}
     >
-      <group position={[-2.3, 0, -25.64]} rotation={[0, 0.06, 0]}>
+      <group
+        position={[-2.3, 0, -25.64]}
+        // position={[X1, 0, Y1]}
+        rotation={[0, 0.06, 0]}>
         <mesh geometry={nodes.Cube029.geometry} material={materials.NEGROMETAL_PARANTES}
-        castShadow
+          // position={[X1, 0, Y1]}
+        castShadow 
         />
-        <mesh geometry={nodes.Cube029_1.geometry} material={materials.PARANTEBAKE} castShadow/>
-        <mesh geometry={nodes.Cube029_2.geometry} material={materials.SOGA} castShadow/>
+        <mesh geometry={nodes.Cube029_1.geometry} material={materials.PARANTEBAKE}
+        // position={[X1, 0, Y1]}
+          castShadow />
+        <mesh geometry={nodes.Cube029_2.geometry} material={materials.SOGA}
+        // position={[X1, 0, Y1]}
+          castShadow />
       </group>
     </group>
   )
@@ -193,26 +211,34 @@ export function Parantes(props: JSX.IntrinsicElements['group']) {
 useGLTF.preload('/PARANTES/PARANTES.gltf')
 
 export function Patas(props: JSX.IntrinsicElements['group']) {
-  const { nodes, materials } = useGLTF('/SILLAS/PATAS.gltf') as GLTFResult
+  const { nodes, materials } = useGLTF('MODELS/SILLAS/PATAS.gltf') as GLTFResult
   return (
-    <group {...props} dispose={null}>
-      <mesh geometry={nodes.Cylinder024.geometry} material={materials.PATASBAKE} position={[4.8, -0.09, 7.13]} rotation={[-Math.PI, 0.5, -Math.PI]} castShadow/>
+    <group {...props} dispose={null}
+    position={[X1, 0, Y1]}
+    >
+      <mesh geometry={nodes.Cylinder024.geometry} material={materials.PATASBAKE}
+        // position={[X1, 0, Y1]}
+        position={[4.8, -0.09, 7.13]}
+        rotation={[-Math.PI, 0.5, -Math.PI]} castShadow />
     </group>
   )
 }
-useGLTF.preload('/SILLAS/PATAS.gltf')
+useGLTF.preload('/MODELS/SILLAS/PATAS.gltf')
 
 
 export function PatasRejas(props: JSX.IntrinsicElements['group']) {
-  const { nodes, materials } = useGLTF('/SILLAS/PATASREJAS.gltf') as GLTFResult
+  const { nodes, materials } = useGLTF('/MODELS/SILLAS/PATASREJAS.gltf') as GLTFResult
   return (
-    <group {...props} dispose={null}>
-      <mesh geometry={nodes.Cylinder009.geometry} material={materials.NEGROMETAL_PATASREJAS} rotation={[0, 0.09, 0]} castShadow />
+    <group {...props} dispose={null}
+    position={[X1, 0, Y1]}
+    >
+      <mesh geometry={nodes.Cylinder009.geometry} material={materials.NEGROMETAL_PATASREJAS}
+        rotation={[0, 0.09, 0]} castShadow />
     </group>
   )
 }
 
-useGLTF.preload('/SILLAS/PATASREJAS.gltf');
+useGLTF.preload('/MODELS//SILLAS/PATASREJAS.gltf');
 
 
 
