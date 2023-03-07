@@ -28,7 +28,9 @@ function App() {
 
   return (
     <div className='h-screen bg-black'>
-      <Canvas shadows>
+
+      <Canvas shadows >
+        
       {/* <ambientLight intensity={0.5} /> */}
         {/* <pointLight position={[10, 10, 10]}
           intensity={1}
@@ -113,7 +115,7 @@ function App() {
       target={[0, 0, 0]}
     />
             
-      <Suspense >
+      <Suspense fallback={<Loader />}>
         <Scene />
           </Suspense>
            {/* </Stage> */}
